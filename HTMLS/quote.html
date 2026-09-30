@@ -1,0 +1,1316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Request a free quote from Coastal Wraps for vehicle wraps, commercial graphics, marine wraps, tint, PPF, and custom projects.">
+
+    <title>Get a Free Quote | Coastal Wraps</title>
+
+    <!-- WEBSITE STYLES -->
+    <link rel="icon" type="image/jpeg" href="../Logos/CoastalWrapsOffical logo.jpg">
+
+    <link rel="stylesheet" href="../Styles/common.css">
+
+    <link rel="stylesheet" href="../Styles/style.css">
+
+
+    <!-- QUOTE PAGE STYLES -->
+    <style>
+        /* ========================================
+           QUOTE PAGE
+        ======================================== */
+
+        .quote-page {
+            background: #f4f4f4;
+            min-height: 100vh;
+            padding-bottom: 90px;
+        }
+
+
+        /* ========================================
+           HERO
+        ======================================== */
+
+        .quote-hero {
+            background:
+                linear-gradient(rgba(0, 0, 0, 0.62),
+                    rgba(0, 0, 0, 0.74)
+                    ),
+                url("../Commercial/CoastalWraps JakesAudi DSide.jpg");
+
+            background-size: cover;
+            background-position: center 60%;
+
+            color: white;
+
+            text-align: center;
+
+            padding:
+                150px 20px 85px;
+        }
+
+
+        .quote-hero-content {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+
+        .quote-hero .eyebrow {
+            color: #ffffff;
+
+            font-size: 0.82rem;
+
+            font-weight: 800;
+
+            letter-spacing: 0.18em;
+
+            margin-bottom: 14px;
+        }
+
+
+        .quote-hero h1 {
+            margin: 0 0 18px;
+
+            font-size:
+                clamp(2.5rem,
+                    6vw,
+                    4.5rem);
+
+            line-height: 1;
+
+            color: white;
+        }
+
+
+        .quote-hero p {
+            max-width: 650px;
+
+            margin: 0 auto;
+
+            font-size: 1.05rem;
+
+            line-height: 1.7;
+
+            color: rgba(255,
+                    255,
+                    255,
+                    0.86);
+        }
+
+
+        /* ========================================
+           PAGE LAYOUT
+        ======================================== */
+
+        .quote-wrapper {
+            width: min(1180px,
+                    calc(100% - 40px));
+
+            margin:
+                -45px auto 0;
+
+            position: relative;
+
+            z-index: 2;
+        }
+
+
+        .quote-layout {
+            display: grid;
+
+            grid-template-columns:
+                0.75fr 1.6fr;
+
+            background: white;
+
+            border-radius: 18px;
+
+            overflow: hidden;
+
+            box-shadow:
+                0 20px 60px rgba(0, 0, 0, 0.15);
+        }
+
+
+        /* ========================================
+           LEFT INFORMATION PANEL
+        ======================================== */
+
+        .quote-info {
+            background: #111111;
+
+            color: white;
+
+            padding:
+                48px 38px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: space-between;
+        }
+
+
+        .quote-info h2 {
+            color: white;
+
+            font-size: 1.9rem;
+
+            line-height: 1.15;
+
+            margin:
+                0 0 18px;
+        }
+
+
+        .quote-info-text {
+            color: #cfcfcf;
+
+            line-height: 1.7;
+
+            margin-bottom: 35px;
+        }
+
+
+        .quote-steps {
+            display: grid;
+
+            gap: 22px;
+        }
+
+
+        .quote-step {
+            display: grid;
+
+            grid-template-columns:
+                42px 1fr;
+
+            gap: 14px;
+
+            align-items: start;
+        }
+
+
+        .step-number {
+            width: 42px;
+
+            height: 42px;
+
+            display: grid;
+
+            place-items: center;
+
+            background: white;
+
+            color: black;
+
+            border-radius: 50%;
+
+            font-weight: 800;
+        }
+
+
+        .quote-step h3 {
+            margin:
+                2px 0 5px;
+
+            color: white;
+
+            font-size: 1rem;
+        }
+
+
+        .quote-step p {
+            margin: 0;
+
+            color: #bdbdbd;
+
+            font-size: 0.9rem;
+
+            line-height: 1.5;
+        }
+
+
+        .quote-direct {
+            border-top:
+                1px solid #333;
+
+            padding-top: 30px;
+
+            margin-top: 40px;
+        }
+
+
+        .quote-direct-title {
+            display: block;
+
+            font-size: 0.75rem;
+
+            font-weight: 800;
+
+            letter-spacing: 0.13em;
+
+            margin-bottom: 16px;
+
+            color: #a9a9a9;
+        }
+
+
+        .quote-direct a {
+            display: block;
+
+            color: white;
+
+            text-decoration: none;
+
+            margin-bottom: 11px;
+
+            transition:
+                opacity 0.2s ease;
+        }
+
+
+        .quote-direct a:hover {
+            opacity: 0.7;
+        }
+
+
+        /* ========================================
+           FORM AREA
+        ======================================== */
+
+        .quote-form-area {
+            padding:
+                48px 50px 52px;
+        }
+
+
+        .quote-form-heading {
+            margin-bottom: 34px;
+        }
+
+
+        .quote-form-heading .eyebrow {
+            margin-bottom: 8px;
+        }
+
+
+        .quote-form-heading h2 {
+            margin:
+                0 0 10px;
+
+            font-size: 2rem;
+        }
+
+
+        .quote-form-heading p {
+            margin: 0;
+
+            color: #666666;
+
+            line-height: 1.6;
+        }
+
+
+        /* ========================================
+           FORM GRID
+        ======================================== */
+
+        .quote-grid {
+            display: grid;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            gap:
+                22px 20px;
+        }
+
+
+        .form-group {
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 8px;
+        }
+
+
+        .form-group.full {
+            grid-column:
+                1 / -1;
+        }
+
+
+        .form-group label {
+            font-size: 0.9rem;
+
+            font-weight: 800;
+
+            color: #1a1a1a;
+        }
+
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+
+            box-sizing: border-box;
+
+            font: inherit;
+
+            background: #f7f7f7;
+
+            color: #111111;
+
+            border:
+                1px solid #d7d7d7;
+
+            border-radius: 8px;
+
+            outline: none;
+
+            padding:
+                14px 15px;
+
+            transition:
+                border-color 0.2s ease,
+                box-shadow 0.2s ease,
+                background 0.2s ease;
+        }
+
+
+        .form-group input,
+        .form-group select {
+            min-height: 50px;
+        }
+
+
+        .form-group textarea {
+            min-height: 155px;
+
+            resize: vertical;
+        }
+
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: #111111;
+
+            background: white;
+
+            box-shadow:
+                0 0 0 3px rgba(0, 0, 0, 0.08);
+        }
+
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: #949494;
+        }
+
+
+        /* ========================================
+           SUBMIT BUTTON
+        ======================================== */
+
+        .quote-submit-wrap {
+            grid-column:
+                1 / -1;
+
+            margin-top: 5px;
+        }
+
+
+        .quote-submit {
+            width: 100%;
+
+            min-height: 56px;
+
+            border: none;
+
+            border-radius: 8px;
+
+            background: #111111;
+
+            color: white;
+
+            font-size: 1rem;
+
+            font-weight: 800;
+
+            cursor: pointer;
+
+            transition:
+                transform 0.2s ease,
+                background 0.2s ease;
+        }
+
+
+        .quote-submit:hover {
+            background: #2b2b2b;
+
+            transform:
+                translateY(-1px);
+        }
+
+
+        .quote-submit:disabled {
+            opacity: 0.6;
+
+            cursor: wait;
+
+            transform: none;
+        }
+
+
+        /* ========================================
+           FORM STATUS
+        ======================================== */
+
+        .form-status {
+            display: none;
+
+            grid-column:
+                1 / -1;
+
+            padding: 15px;
+
+            border-radius: 8px;
+
+            font-weight: 600;
+
+            line-height: 1.5;
+        }
+
+
+        .form-status.success {
+            background: #eaf7ed;
+
+            border:
+                1px solid #8fc79b;
+
+            color: #245c30;
+        }
+
+
+        .form-status.error {
+            background: #fff0f0;
+
+            border:
+                1px solid #df9c9c;
+
+            color: #8c2626;
+        }
+
+
+        /* ========================================
+           PRIVACY NOTE
+        ======================================== */
+
+        .quote-note {
+            grid-column:
+                1 / -1;
+
+            margin:
+                -4px 0 0;
+
+            color: #777777;
+
+            font-size: 0.8rem;
+
+            line-height: 1.5;
+
+            text-align: center;
+        }
+
+
+        /* ========================================
+           BACK LINK
+        ======================================== */
+
+        .quote-back {
+            display: inline-block;
+
+            margin:
+                28px 0 0;
+
+            color: #444444;
+
+            font-weight: 700;
+
+            text-decoration: none;
+        }
+
+
+        .quote-back:hover {
+            color: black;
+        }
+
+
+        /* ========================================
+           TABLET
+        ======================================== */
+
+        @media (max-width: 900px) {
+
+            .quote-layout {
+                grid-template-columns: 1fr;
+            }
+
+
+            .quote-info {
+                padding:
+                    38px 30px;
+            }
+
+
+            .quote-direct {
+                margin-top: 30px;
+            }
+
+        }
+
+
+        /* ========================================
+           MOBILE
+        ======================================== */
+
+        @media (max-width: 650px) {
+
+            .quote-hero {
+                padding:
+                    125px 20px 70px;
+            }
+
+
+            .quote-wrapper {
+                width:
+                    calc(100% - 24px);
+
+                margin-top: -30px;
+            }
+
+
+            .quote-form-area {
+                padding:
+                    32px 22px 38px;
+            }
+
+
+            .quote-grid {
+                grid-template-columns: 1fr;
+            }
+
+
+            .form-group.full,
+            .quote-submit-wrap,
+            .form-status,
+            .quote-note {
+                grid-column: auto;
+            }
+
+
+            .quote-info {
+                padding:
+                    34px 24px;
+            }
+
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- ========================================
+         HEADER
+    ======================================== -->
+
+    <header>
+
+        <div class="header">
+
+
+            <!-- LOGO -->
+
+            <a href="index.html#home" class="logo-link" aria-label="Coastal Wraps home">
+
+                <img src="../Logos/CoastalWrapsOffical logo.jpg" alt="Coastal Wraps Logo" class="logo" width="115"
+                    height="80">
+
+            </a>
+
+
+            <!-- PHONE -->
+
+            <div class="header-phone">
+
+                <span>
+                    Call Us
+                </span>
+
+                <a href="tel:3022173229">
+                    (302) 217-3229
+                </a>
+
+            </div>
+
+
+            <!-- NAVIGATION -->
+
+            <nav aria-label="Main navigation">
+
+                <ul>
+
+                    <li>
+                        <a href="index.html#home">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="index.html#services">
+                            Services
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="index.html#about">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="quote.html">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+
+            <a href="quote.html" class="quote-button">
+                Get a Quote
+            </a>
+
+
+        </div>
+
+    </header>
+
+
+
+    <main class="quote-page">
+
+
+        <!-- ========================================
+             QUOTE HERO
+        ======================================== -->
+
+        <section class="quote-hero">
+
+            <div class="quote-hero-content">
+
+                <p class="eyebrow">
+                    COASTAL WRAPS
+                </p>
+
+                <h1>
+                    Let’s Build Your Next Project.
+                </h1>
+
+                <p>
+
+                    Tell us what you’re looking for
+                    and we’ll help you get started
+                    with a free quote.
+
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ========================================
+             QUOTE CONTENT
+        ======================================== -->
+
+        <div class="quote-wrapper">
+
+
+            <div class="quote-layout">
+
+
+                <!-- ========================================
+                     LEFT SIDE
+                ======================================== -->
+
+                <aside class="quote-info">
+
+
+                    <div>
+
+
+                        <h2>
+                            What Happens Next?
+                        </h2>
+
+
+                        <p class="quote-info-text">
+
+                            Send us a few details about
+                            your project and our team
+                            will follow up to discuss
+                            options, pricing, and next steps.
+
+                        </p>
+
+
+
+                        <div class="quote-steps">
+
+
+                            <div class="quote-step">
+
+                                <div class="step-number">
+                                    1
+                                </div>
+
+                                <div>
+
+                                    <h3>
+                                        Tell Us About It
+                                    </h3>
+
+                                    <p>
+                                        Share your vehicle,
+                                        boat, property, or
+                                        custom project details.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="quote-step">
+
+                                <div class="step-number">
+                                    2
+                                </div>
+
+                                <div>
+
+                                    <h3>
+                                        We’ll Reach Out
+                                    </h3>
+
+                                    <p>
+                                        We’ll contact you
+                                        using your preferred
+                                        contact method.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="quote-step">
+
+                                <div class="step-number">
+                                    3
+                                </div>
+
+                                <div>
+
+                                    <h3>
+                                        Get Your Quote
+                                    </h3>
+
+                                    <p>
+                                        We’ll discuss your
+                                        project and provide
+                                        pricing and next steps.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- DIRECT CONTACT -->
+
+                    <div class="quote-direct">
+
+                        <span class="quote-direct-title">
+                            CONTACT COASTAL WRAPS
+                        </span>
+
+
+                        <a href="tel:3022173229">
+
+                            (302) 217-3229
+
+                        </a>
+
+
+                        <a href="mailto:info@coastalwraps302.com">
+
+                            info@coastalwraps302.com
+
+                        </a>
+
+
+                        <a href="https://www.instagram.com/coastalwraps302/" target="_blank" rel="noopener noreferrer">
+
+                            @coastalwraps302
+
+                        </a>
+
+                    </div>
+
+
+                </aside>
+
+
+
+                <!-- ========================================
+                     FORM
+                ======================================== -->
+
+                <section class="quote-form-area">
+
+
+                    <div class="quote-form-heading">
+
+                        <p class="eyebrow">
+                            FREE QUOTE
+                        </p>
+
+                        <h2>
+                            Tell Us About Your Project
+                        </h2>
+
+                        <p>
+
+                            Fill out the form below.
+                            The more information you provide,
+                            the better we can help.
+
+                        </p>
+
+                    </div>
+
+
+
+                    <form id="quote-form" action="https://formspree.io/f/xrpbjrbv" method="POST">
+
+
+                        <div class="quote-grid">
+
+
+                            <!-- NAME -->
+
+                            <div class="form-group">
+
+                                <label for="name">
+                                    Name
+                                </label>
+
+                                <input id="name" name="name" type="text" placeholder="Your name" autocomplete="name"
+                                    required>
+
+                            </div>
+
+
+
+                            <!-- EMAIL -->
+
+                            <div class="form-group">
+
+                                <label for="email">
+                                    Email
+                                </label>
+
+                                <input id="email" name="email" type="email" placeholder="you@example.com"
+                                    autocomplete="email" required>
+
+                            </div>
+
+
+
+                            <!-- PHONE -->
+
+                            <div class="form-group">
+
+                                <label for="phone">
+                                    Phone
+                                </label>
+
+                                <input id="phone" name="phone" type="tel" placeholder="Your phone number"
+                                    autocomplete="tel" required>
+
+                            </div>
+
+
+
+                            <!-- VEHICLE / PROJECT -->
+
+                            <div class="form-group">
+
+                                <label for="vehicle">
+                                    Vehicle or Project
+                                </label>
+
+                                <input id="vehicle" name="vehicle" type="text"
+                                    placeholder="Year, make, model, boat, property..." required>
+
+                            </div>
+
+
+
+                            <!-- SERVICE -->
+
+                            <div class="form-group">
+
+                                <label for="service">
+                                    Service
+                                </label>
+
+                                <select id="service" name="service" required>
+
+                                    <option value="">
+                                        Select a service
+                                    </option>
+
+                                    <option value="Color Change & PPF">
+                                        Color Change & PPF
+                                    </option>
+
+                                    <option value="Commercial Wraps & Fleet Graphics">
+                                        Commercial Wraps & Fleet Graphics
+                                    </option>
+
+                                    <option value="Marine Wraps">
+                                        Marine Wraps
+                                    </option>
+
+                                    <option value="Vehicle & Residential Tints">
+                                        Vehicle & Residential Tints
+                                    </option>
+
+                                    <option value="Custom Print Wraps">
+                                        Custom Print Wraps
+                                    </option>
+
+                                    <option value="Other">
+                                        Other
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+
+                            <!-- CONTACT METHOD -->
+
+                            <div class="form-group">
+
+                                <label for="contact-method">
+                                    Preferred Contact
+                                </label>
+
+                                <select id="contact-method" name="contact-method" required>
+
+                                    <option value="">
+                                        Select contact method
+                                    </option>
+
+                                    <option value="Phone">
+                                        Phone
+                                    </option>
+
+                                    <option value="Text">
+                                        Text
+                                    </option>
+
+                                    <option value="Email">
+                                        Email
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+
+                            <!-- MESSAGE -->
+
+                            <div class="form-group full">
+
+                                <label for="message">
+                                    Project Details
+                                </label>
+
+                                <textarea id="message" name="message"
+                                    placeholder="Tell us what you're looking for, colors, design ideas, coverage, timeline, or anything else that would help us understand the project."
+                                    required></textarea>
+
+                            </div>
+
+
+
+                            <!-- EMAIL SUBJECT -->
+
+                            <input type="hidden" name="_subject" value="New Coastal Wraps Quote Request">
+
+
+
+                            <!-- STATUS MESSAGES -->
+
+                            <div id="success-message" class="form-status success">
+
+                                Thank you! Your quote request
+                                was sent successfully.
+                                We’ll be in touch soon.
+
+                            </div>
+
+
+                            <div id="error-message" class="form-status error">
+
+                                We couldn’t send your request.
+                                Please try again or call
+                                (302) 217-3229.
+
+                            </div>
+
+
+
+                            <!-- SUBMIT -->
+
+                            <div class="quote-submit-wrap">
+
+                                <button id="submit-button" class="quote-submit" type="submit">
+
+                                    Request My Free Quote
+
+                                </button>
+
+                            </div>
+
+
+
+                            <p class="quote-note">
+
+                                Your information is only used
+                                to respond to your quote request.
+
+                            </p>
+
+
+                        </div>
+
+
+                    </form>
+
+
+                </section>
+
+
+            </div>
+
+
+
+            <a href="index.html" class="quote-back">
+
+                ← Back to Coastal Wraps
+
+            </a>
+
+
+        </div>
+
+
+    </main>
+
+
+
+    <!-- ========================================
+         FORMSPREE
+    ======================================== -->
+
+    <script>
+
+        const form =
+            document.getElementById(
+                "quote-form"
+            );
+
+
+        const submitButton =
+            document.getElementById(
+                "submit-button"
+            );
+
+
+        const successMessage =
+            document.getElementById(
+                "success-message"
+            );
+
+
+        const errorMessage =
+            document.getElementById(
+                "error-message"
+            );
+
+
+
+        form.addEventListener(
+            "submit",
+            async function (event) {
+
+
+                event.preventDefault();
+
+
+                successMessage.style.display =
+                    "none";
+
+
+                errorMessage.style.display =
+                    "none";
+
+
+                submitButton.disabled =
+                    true;
+
+
+                submitButton.textContent =
+                    "Sending...";
+
+
+                const formData =
+                    new FormData(form);
+
+
+                try {
+
+
+                    const response =
+                        await fetch(
+                            form.action,
+                            {
+
+                                method:
+                                    "POST",
+
+                                body:
+                                    formData,
+
+                                headers: {
+
+                                    "Accept":
+                                        "application/json"
+
+                                }
+
+                            }
+                        );
+
+
+
+                    if (response.ok) {
+
+
+                        form.reset();
+
+
+                        successMessage.style.display =
+                            "block";
+
+
+                        successMessage.scrollIntoView(
+                            {
+                                behavior:
+                                    "smooth",
+
+                                block:
+                                    "center"
+                            }
+                        );
+
+
+                    } else {
+
+
+                        errorMessage.style.display =
+                            "block";
+
+
+                    }
+
+
+                } catch (error) {
+
+
+                    console.error(
+                        "Form submission error:",
+                        error
+                    );
+
+
+                    errorMessage.style.display =
+                        "block";
+
+
+                } finally {
+
+
+                    submitButton.disabled =
+                        false;
+
+
+                    submitButton.textContent =
+                        "Request My Free Quote";
+
+
+                }
+
+
+            }
+        );
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Protect and customize your boat with professional marine wrap services designed to make it stand out on the water.">
+    <title>Marine Wraps | Coastal Wraps</title>
+    <link rel="icon" type="image/jpeg" href="../Logos/CoastalWrapsOffical logo.jpg">
+    <link rel="stylesheet" href="../Styles/common.css">
+    <link rel="stylesheet" href="../Styles/service-page.css">
+    <script src="../site-config.js" defer></script>
+    <script src="../gallery-data.js" defer></script>
+    <script src="../script.js" defer></script>
+    <script src="../service-page.js" defer></script>
+</head>
+<body data-service="marine-wraps">
+    <a href="#main-content" class="skip-link">Skip to content</a>
+    <header>
+        <div class="header">
+            <a href="index.html" class="logo-link" aria-label="Coastal Wraps home">
+                <img src="../Logos/CoastalWrapsOffical logo.jpg" alt="Coastal Wraps Logo" class="logo" width="115" height="80">
+            </a>
+            <div class="header-phone">
+                <span>Call Us</span>
+                <a href="tel:3022173329">(302) 217-3329</a>
+            </div>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="index.html#contact" class="quote-button">Get a Quote</a>
+        </div>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+        <section class="service-intro" aria-labelledby="service-title">
+            <p class="eyebrow">OUR WORK</p>
+            <h1 id="service-title">Marine Wraps</h1>
+            <p class="intro-text">Protect and customize your boat with professional marine wrap services designed to make it stand out on the water.</p>
+            <a href="index.html#contact" class="intro-quote">Request a Free Quote</a>
+        </section>
+
+        <section class="project-slideshow" aria-label="Marine Wraps photo gallery">
+            <div class="slideshow-container">
+                <button type="button" class="slide-image-button" id="expand-slide" aria-label="View current project photo full size">
+                    <img id="slideshow-image" src="../Marine/coastalwraps boat GD.jpg" alt="Great Dane — boat graphics by Coastal Wraps" fetchpriority="high" decoding="async">
+                </button>
+                <div class="slideshow-controls">
+                    <button class="slide-button prev" type="button" aria-label="Previous project photo">&#10094;</button>
+                    <div class="slide-caption" aria-live="polite" aria-atomic="true">
+                        <p id="slide-caption">Great Dane</p>
+                        <p class="slide-counter"><span id="slide-current">1</span> / <span id="slide-total">9</span></p>
+                    </div>
+                    <button class="slide-button next" type="button" aria-label="Next project photo">&#10095;</button>
+                </div>
+                <p class="gallery-help">Select a photo to view it full size. Use the arrows to explore more projects.</p>
+            </div>
+        </section>
+
+        <section class="recent-projects" aria-labelledby="featured-heading">
+            <p class="eyebrow">FEATURED PROJECTS</p>
+            <h2 id="featured-heading">Featured Marine Projects</h2>
+            <p>Take a closer look at our work. Select any photo to open the gallery.</p>
+            <div class="project-grid">
+                <article class="project-card">
+                    <button type="button" class="project-photo" data-gallery="marine-wraps" data-index="0" aria-label="View Great Dane photo full size">
+                        <img src="../Marine/coastalwraps boat GD.jpg" alt="Great Dane — boat graphics by Coastal Wraps" loading="lazy" decoding="async">
+                    </button>
+                    <div class="project-card-content">
+                        <h3>Great Dane</h3>
+                        <p>Custom lettering and graphics bring the boat&#39;s name into focus.</p>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <button type="button" class="project-photo" data-gallery="marine-wraps" data-index="2" aria-label="View Angel photo full size">
+                        <img src="../Marine/Coastalwraps BlackboatFW-Angel Marine.jpg" alt="Angel — boat hull wrap by Coastal Wraps" loading="lazy" decoding="async">
+                    </button>
+                    <div class="project-card-content">
+                        <h3>Angel</h3>
+                        <p>A hull wrap and matching lettering create a coordinated boat design.</p>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <button type="button" class="project-photo" data-gallery="marine-wraps" data-index="5" aria-label="View Salt Water Outlaw photo full size">
+                        <img src="../Marine/CoastalWraps SaltWaterOutlawOC Side.JPG" alt="Salt Water Outlaw — side view of the boat&#39;s business graphics by Coastal Wraps" loading="lazy" decoding="async">
+                    </button>
+                    <div class="project-card-content">
+                        <h3>Salt Water Outlaw</h3>
+                        <p>Business graphics help charter customers recognize the boat.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        
+        <section class="instagram-section" data-instagram-section hidden>
+            <p class="eyebrow">FOLLOW OUR WORK</p>
+            <h2>See More of Our Work</h2>
+            <p>Follow Coastal Wraps on Instagram for our latest projects and updates.</p>
+            <a data-instagram-link href="index.html#contact" target="_blank" rel="noopener noreferrer" class="instagram-button">Follow Us on Instagram</a>
+        </section>
+    </main>
+
+    <a href="index.html#contact" class="floating-quote">Get a Quote</a>
+    <footer class="site-footer">
+        <h2>Contact Us</h2>
+        <div class="footer-contact">
+            <a href="tel:3022173329">(302) 217-3329</a>
+            <a href="mailto:info@coastalwraps302.com">info@coastalwraps302.com</a>
+            <span>19975 Shelbyville, DE</span>
+        </div>
+    </footer>
+
+    <dialog id="gallery-modal" class="gallery-modal" aria-label="Project photo gallery">
+        <button class="gallery-close" type="button" aria-label="Close gallery" autofocus>&times;</button>
+        <button class="gallery-modal-prev" type="button" aria-label="Previous image">&#10094;</button>
+        <img id="gallery-modal-image" src="../Logos/CoastalWrapsOffical logo.jpg" alt="Coastal Wraps">
+        <button class="gallery-modal-next" type="button" aria-label="Next image">&#10095;</button>
+        <div class="gallery-status" aria-live="polite">
+            <p id="gallery-caption"></p>
+            <p id="gallery-counter" class="gallery-counter"></p>
+        </div>
+    </dialog>
+</body>
+</html>
